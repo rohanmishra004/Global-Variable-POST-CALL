@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Global Variable Example</title>
+</head>
+
+<body>
+    <h1>Global Variable Example</h1>
+
+
+
+    <form action="/new" method="post">
+        <input type="text" name="name" placeholder="Your Name">
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <h2>Current Value of selectedVal:</h2>
+    <p><%= selectedVal ? selectedVal : 'No value' %></p>
+
+    <h2>SelectedVal Endpoints:</h2>
+    <ul>
+        <li><a href="/selectedVal">Get selectedVal</a></li>
+        <li><a href="/selectedVal/uppercase">Get selectedVal (Uppercase)</a></li>
+        <li><a href="/selectedVal/length">Get selectedVal Length</a></li>
+    </ul>
+</body>
+
+</html>
